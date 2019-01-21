@@ -9,4 +9,6 @@ Different letters are in different branches, with the base branch functioning as
 Data in letters is property of Manuel Olguín 2019.
 Template is provided by Giampiero Salvi and Örjan Ekeberg under a Creative Commons BY-SA 4.0 License.
 
+The KTH Royal Institute of Technology logo is exclusive property of KTH Royal Institute of Technology and may follow a different license.
+
 See [LICENCE](LICENSE) for details.
