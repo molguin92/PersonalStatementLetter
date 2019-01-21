@@ -9,4 +9,4 @@ Different letters are in different branches, with the base branch functioning as
 Data in letters is property of Manuel Olguín 2019.
 Template is provided by Giampiero Salvi and Örjan Ekeberg under a Creative Commons BY-SA 4.0 License.
 
-See (LICENCE)[LICENSE] for details.
+See [LICENCE](LICENSE) for details.
