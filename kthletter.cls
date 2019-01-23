@@ -44,7 +44,7 @@
 \newcommand{\@kthletter@recipientstr}{Mottagare}
 \ProcessOptions
 \if@kthletterenglish
-  \renewcommand{\@kthletter@dnrstr}{Ev dossier number}
+  \renewcommand{\@kthletter@dnrstr}{}%Ev dossier number}
   \renewcommand{\@kthletter@recipientstr}{Recipient}
   \RequirePackage[english]{babel}
 \else
@@ -53,17 +53,17 @@
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
 \RequirePackage{times}
-\RequirePackage[a4paper]{geometry}
+\RequirePackage[a4paper, showframe]{geometry}
 \RequirePackage{graphics}
 \RequirePackage{ifpdf}
 \RequirePackage[T1]{url}
 \input{size1\@ptsize.clo}
 \if@twoside
 \geometry{a4paper,twoside,nohead,footskip=10mm,includefoot,
-          left=62mm,right=25mm,top=30mm,bottom=12mm}
+          left=40mm,right=25mm,top=12mm,bottom=12mm}
 \else
 \geometry{a4paper,nohead,footskip=10mm,includefoot,
-          left=62mm,right=25mm,top=30mm,bottom=12mm}
+          left=40mm,right=25mm,top=12mm,bottom=12mm}
 \fi
 \setlength{\lineskip}{1pt}
 \setlength{\normallineskip}{1pt}
@@ -253,7 +253,7 @@
     \setlength{\unitlength}{1mm}
     \begin{picture}(0,0)
       \if@kthletter@head
-        \put(-95,20){\makebox(0,0)[t]{%
+        \put(-92.5,0){\makebox(0,0)[t]{%
             \scalebox{0.25}{\includegraphics{\@kthletter@logo}}}}
         \put(22,10){\makebox(0,0)[lb]{%ciao}}%
             \begin{tabular}{p{0.45\textwidth}}%
@@ -270,16 +270,16 @@
   %  & \@kthletter@dnrstr \\
   %  & \@kthletter@dnr
   %\end{tabular}
-  \vspace{5mm}
+  %\vspace{5mm}
   \hfill
-  \begin{minipage}{0.65\textwidth}
+  \begin{minipage}{0.5\textwidth}
     \textbf{\@kthletter@recipientstr}\\
     \toname\\
-    \toaddress
+    \toaddress\\
+    \vspace*{5mm}\\
+    \@date
   \end{minipage}
 
-  \vspace*{5mm}
-  \@date\\[5mm]
   #1\par\nobreak}
 \newcommand{\closing}[1]{\par\nobreak\vspace{\parskip}%
   \stopbreaks
