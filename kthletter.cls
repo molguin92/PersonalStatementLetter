@@ -53,7 +53,7 @@
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
 \RequirePackage{times}
-\RequirePackage[a4paper, showframe]{geometry}
+\RequirePackage[a4paper]{geometry}
 \RequirePackage{graphics}
 \RequirePackage{ifpdf}
 \RequirePackage[T1]{url}
