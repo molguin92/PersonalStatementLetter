@@ -1,15 +1,11 @@
-% for Swedish letters remove the option 'english'
 \documentclass[english]{kthletter}
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\usepackage[backend=bibtex]{biblatex}
 
-% Define here relevant information
-% defines eventual bank accounts (usually left blank)
 \accounts{}
-% your address
-\address{Brinellvägen 8, 100 44 Stockholm}
-% the date
+\address{Malvinas väg 10, 100 44 Stockholm}
 \date{Stockholm, \today}
 \location{Malvinas väg 10}
 \name{Manuel Olguín}
@@ -21,7 +17,7 @@
 
 \begin{document}
 
-\begin{letter}% optional dossier number
+\begin{letter}[]% optional dossier number
   {}
 \opening{To Whom It May Concern,}
 
