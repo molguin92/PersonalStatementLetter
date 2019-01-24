@@ -60,10 +60,10 @@
 \input{size1\@ptsize.clo}
 \if@twoside
 \geometry{a4paper,twoside,nohead,footskip=10mm,includefoot,
-          left=40mm,right=25mm,top=12mm,bottom=12mm}
+          left=45mm,right=25mm,top=12mm,bottom=12mm}
 \else
 \geometry{a4paper,nohead,footskip=10mm,includefoot,
-          left=40mm,right=25mm,top=12mm,bottom=12mm}
+          left=45mm,right=25mm,top=12mm,bottom=12mm}
 \fi
 \setlength{\lineskip}{1pt}
 \setlength{\normallineskip}{1pt}
@@ -81,15 +81,16 @@
   \let\@evenfoot\@empty\let\@evenhead\@empty}
 \def\ps@plain{%
   \let\@oddhead\@empty
-  \def\@oddfoot{\if@kthletter@foot
-    \fontencoding{T1}\fontfamily{cmss}\selectfont
-    \fontsize{7}{8.5}\selectfont
-    \parbox{\textwidth}{\offinterlineskip
+  \def\@oddfoot{%
+    \if@kthletter@foot%
+    \fontencoding{T1}\fontfamily{cmss}\selectfont%
+    \fontsize{7}{8.5}\selectfont%
+    \hspace{-5pt}\parbox{\textwidth}{\offinterlineskip
       %\setlength{\lineskip}{4pt}
       %\setlength{\normallineskip}{4pt}
       \begin{center}
         \begin{tabular}{p{0.9\textwidth}p{0.1\textwidth}}
-          \textbf{KTH} & \\
+          \textbf{KTH EECS} & \\
           \fromaddress & \\
           \telephonenum\ | \@kthletter@email\ | \@kthletter@web &
           \ifnum\@nameuse{@kthletter@lastpage\the@kthletter@letter}=1%
